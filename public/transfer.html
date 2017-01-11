@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="thumbnail">
+      <div class="caption">
+        <h2>Nombre: {{ transfer.clientName }}</h2>
+        <p>Email: <strong>{{ transfer.email }}</strong></p>
+        <p>Total: <strong>{{ transfer.total }}</strong></p>
+        <p>Numero de Tarjeta: <strong>{{ transfer.ccNumber }}</strong></p>
+        <p>Tipo de Tarjeta: <strong>{{ transfer.ccType }}</strong></p>
+        <p>Total: <strong>{{ transfer.total }}</strong></p>
+        <p>Referencia Unica: <strong>{{ transfer._id }}</strong></p>
+        <p><a href="#/"><button class="btn btn-danger" ng-click="deleteTransfer(transfer._id)">Borrar</button></a></p>
+      </div>
+    </div>
+    <a class="btn btn-default" href="#/">Regresar</a>
+  </div>
+</div>

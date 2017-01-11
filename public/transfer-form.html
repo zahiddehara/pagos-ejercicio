@@ -1,0 +1,30 @@
+<div class="row" ng-hide="contact._id">
+  <div class="col-md-6">
+      <h2>Realizar Pago</h2>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <p>
+      <label>Nombre del Cliente*</label> 
+      <input id="clientName" class="form-control" type="text" ng-model="transfer.clientName" required> 
+    </p>
+    <p>
+      <label>Email</label> 
+      <input id="email" class="form-control" type="email" ng-model="transfer.email"> 
+    </p>
+    <p>
+      <label>Total</label> 
+      <input id="total" class="form-control" type="text" ng-model="transfer.total"> 
+    </p>
+    <p>
+      <label>Numero de Tarjeta</label> 
+      <input id="ccNumber" class="form-control" type="text" ng-model="transfer.ccNumber" ng-change="checkCcType()">
+      <p class="text-success"><strong>{{ transfer.ccType }}</strong></p>
+    </p>
+    <p>
+      <button class="btn btn-success" ng-click="saveTransfer(transfer)">Enviar</button>
+      <button class="btn btn-default" ng-click="back()">Regresar</button>
+    </p>
+  </div>
+</div>
